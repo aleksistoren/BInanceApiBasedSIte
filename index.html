@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Binance Price Checker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Binance Price Checker</h1>
+      <form>
+        <label for="pair">Trading Pair:</label>
+        <input type="text" id="pair" name="pair">
+        <button type="button" onclick="getPrice()">Get Price</button>
+      </form>
+      <div class="chart">
+        <canvas id="chart"></canvas>
+      </div>
+      <div id="price"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
